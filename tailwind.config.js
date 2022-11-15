@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     screens: {
       tablet: "768px",
-      desktop: "1110px"
+      desktop: "1174px"
     },
     colors: {
       black: '#151515',
@@ -25,6 +25,9 @@ module.exports = {
     },
     fontFamily: {
       primary: 'Space Grotesk, sans-serif'
+    },
+    container: {
+      center: true
     },
     extend: {},
   },

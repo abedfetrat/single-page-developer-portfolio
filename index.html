@@ -1,46 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
 
-  <link rel="stylesheet" href="/css/main.css">
-  
-  <title>Frontend Mentor | Single-page developer portfolio</title>
-</head>
-<body class="relative font-primary text-base bg-black text-grey tablet:text-md">
-  <!-- Header -->
-  <header class="absolute top-6 left-0 right-0 tablet:top-8">
-    <div class="container mx-auto px-4 flex flex-col items-center gap-6 tablet:px-8 tablet:flex-row tablet:justify-between">
-      <p class="font-bold text-lg text-white tablet:text-[32px]">adamkeys</p>
-      <div class="flex items-center gap-6 tablet:gap-8">
-        <a href="#" class="w-5 tablet:w-6">
-          <img src="./assets/images/icon-github.svg" alt="">
-        </a>
-        <a href="#" class="w-5 tablet:w-6">
-          <img src="./assets/images/icon-frontend-mentor.svg" alt="">
-        </a>
-        <a href="#" class="w-5 tablet:w-6">
-          <img src="./assets/images/icon-linkedin.svg" alt="">
-        </a>
-        <a href="#" class="w-5 tablet:w-6">
-          <img src="./assets/images/icon-twitter.svg" alt="">
-        </a>
+    <link rel="stylesheet" href="/css/main.css" />
+
+    <title>Frontend Mentor | Single-page developer portfolio</title>
+  </head>
+  <body
+    class="relative bg-black font-primary text-base text-grey tablet:text-md"
+  >
+    <!----------------- HEADER ----------------->
+    <header class="absolute inset-x-0 top-7 z-50 tablet:top-8 desktop:top-10">
+      <!-- Container -->
+      <div
+        class="container flex flex-col items-center gap-6 px-4 tablet:flex-row tablet:justify-between tablet:px-8"
+      >
+        <!-- Logo -->
+        <p class="text-lg font-bold leading-none text-white tablet:text-[32px]">
+          adamkeyes
+        </p>
+        <!-- Socials -->
+        <div class="flex items-center gap-6 tablet:gap-8 desktop:mr-8">
+          <a href="#" class="w-5 tablet:w-6">
+            <img src="./assets/images/icon-github.svg" alt="" />
+          </a>
+          <a href="#" class="w-5 tablet:w-6">
+            <img src="./assets/images/icon-frontend-mentor.svg" alt="" />
+          </a>
+          <a href="#" class="w-5 tablet:w-6">
+            <img src="./assets/images/icon-linkedin.svg" alt="" />
+          </a>
+          <a href="#" class="w-5 tablet:w-6">
+            <img src="./assets/images/icon-twitter.svg" alt="" />
+          </a>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <main class="pt-80">
-    Nice to meet you! I'm Adam Keyes.
+    <main>
+      <!----------------- HERO ----------------->
+      <section class="container px-4 tablet:px-8">
+        <div
+          class="relative mx-auto grid max-w-[375px] justify-items-center gap-11 tablet:max-w-none tablet:justify-items-start"
+        >
+          <!-- Left Content -->
+          <div
+            class="tablet:text-start self-end text-center tablet:col-start-1 tablet:row-start-1 desktop:mb-[115px]"
+          >
+            <h1
+              class="text-xl font-bold text-white tablet:text-3xl desktop:text-4xl"
+            >
+              Nice to <br class="hidden tablet:block desktop:hidden" />
+              meet you! <br class="tablet:hidden desktop:block" />
+              I'm
+              <span
+                class="inline-block border-b-4 border-green tablet:border-b-[6px]"
+                >Adam Keyes</span
+              >.
+            </h1>
+            <p class="mt-6 max-w-[39ch] tablet:mt-[60px] desktop:mt-10">
+              Based in the UK, I'm a front-end developer passionate about
+              building accessible web apps that users love.
+            </p>
+            <a
+              href="#"
+              class="mt-7 inline-block border-b-2 border-green pb-3 text-base font-bold uppercase tracking-[2.3px] text-white transition-colors hover:text-green tablet:mt-9 desktop:mt-[66px]"
+              >Contact me</a
+            >
+          </div>
+          <!-- Profile Image -->
+          <div
+            class="-order-1 mx-auto max-w-[174px] tablet:col-start-1 tablet:row-start-1 tablet:ml-auto tablet:-mr-[32px] tablet:max-w-[322px] desktop:mr-0 desktop:max-w-[445px]"
+          >
+            <picture>
+              <source
+                srcset="./assets/images/image-profile-desktop.webp"
+                media="(min-width: 1174px)"
+              />
+              <source
+                srcset="./assets/images/image-profile-tablet.webp"
+                media="(min-width: 768px)"
+              />
+              <img src="./assets/images/image-profile-mobile.webp" alt="" />
+            </picture>
+          </div>
+          <!-- Rings Background Pattern -->
+          <div
+            class="absolute top-[124px] left-[-342px] -z-10 tablet:top-[86px] tablet:left-[-265px] desktop:top-[133px] desktop:left-[100]"
+          >
+            <img
+              src="./assets/images/pattern-rings.svg"
+              width="530"
+              height="129"
+              alt=""
+            />
+          </div>
+          <!-- Circle Background Pattern -->
+          <div
+            class="absolute top-[254px] right-[-65px] z-10 tablet:top-auto tablet:bottom-0 desktop:bottom-[70px] desktop:right-[380px]"
+          >
+            <img
+              src="./assets/images/pattern-circle.svg"
+              width="129"
+              height="129"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
 
-    Based in the UK, I'm a front-end developer passionate about 
-    building accessible web apps that users love.
-
-    Contact me
-
-    HTML
+      <!--  HTML
     4 Years Experience
 
     CSS
@@ -103,9 +181,7 @@
 
     Send message
 
-    adamkeyes
-
-  </main>
-
-</body>
+    adamkeyes -->
+    </main>
+  </body>
 </html>
