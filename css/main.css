@@ -580,6 +580,30 @@ video {
   right: -65px;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.right-\[-344px\] {
+  right: -344px;
+}
+
+.bottom-\[65px\] {
+  bottom: 65px;
+}
+
+.bottom-\[0px\] {
+  bottom: 0px;
+}
+
+.bottom-\[-65px\] {
+  bottom: -65px;
+}
+
 .z-50 {
   z-index: 50;
 }
@@ -607,6 +631,10 @@ video {
 
 .mt-7 {
   margin-top: 1.75rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .inline-block {
@@ -673,6 +701,11 @@ video {
   overflow-x: visible;
 }
 
+.border-y {
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+}
+
 .border-b-4 {
   border-bottom-width: 4px;
 }
@@ -681,9 +714,18 @@ video {
   border-bottom-width: 2px;
 }
 
+.border-t {
+  border-top-width: 1px;
+}
+
 .border-green {
   --tw-border-opacity: 1;
   border-color: rgb(78 225 160 / var(--tw-border-opacity));
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .bg-black {
@@ -696,8 +738,21 @@ video {
   padding-right: 1rem;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .pb-3 {
   padding-bottom: 0.75rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+.pb-32 {
+  padding-bottom: 8rem;
 }
 
 .text-center {
@@ -724,6 +779,10 @@ video {
   letter-spacing: -1.14px;
 }
 
+.text-\[32px\] {
+  font-size: 32px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -736,8 +795,16 @@ video {
   line-height: 1;
 }
 
+.leading-\[40px\] {
+  line-height: 40px;
+}
+
 .tracking-\[2\.3px\] {
   letter-spacing: 2.3px;
+}
+
+.tracking-\[-1px\] {
+  letter-spacing: -1px;
 }
 
 .text-grey {
@@ -782,6 +849,26 @@ video {
     bottom: 0px;
   }
 
+  .tablet\:bottom-\[70px\] {
+    bottom: 70px;
+  }
+
+  .tablet\:right-\[-332px\] {
+    right: -332px;
+  }
+
+  .tablet\:bottom-\[-70px\] {
+    bottom: -70px;
+  }
+
+  .tablet\:right-\[0\] {
+    right: 0;
+  }
+
+  .tablet\:right-\[-364px\] {
+    right: -364px;
+  }
+
   .tablet\:col-start-1 {
     grid-column-start: 1;
   }
@@ -806,6 +893,10 @@ video {
     margin-right: -32px;
   }
 
+  .tablet\:mt-4 {
+    margin-top: 1rem;
+  }
+
   .tablet\:block {
     display: block;
   }
@@ -826,6 +917,10 @@ video {
     max-width: 322px;
   }
 
+  .tablet\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .tablet\:flex-row {
     flex-direction: row;
   }
@@ -842,13 +937,35 @@ video {
     gap: 2rem;
   }
 
+  .tablet\:gap-y-\[52px\] {
+    row-gap: 52px;
+  }
+
   .tablet\:border-b-\[6px\] {
     border-bottom-width: 6px;
+  }
+
+  .tablet\:border-b-0 {
+    border-bottom-width: 0px;
   }
 
   .tablet\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .tablet\:py-\[52\] {
+    padding-top: 52;
+    padding-bottom: 52;
+  }
+
+  .tablet\:py-\[52px\] {
+    padding-top: 52px;
+    padding-bottom: 52px;
+  }
+
+  .tablet\:pb-0 {
+    padding-bottom: 0px;
   }
 
   .tablet\:text-start {
@@ -868,6 +985,12 @@ video {
     font-size: 72px;
     line-height: 72px;
     letter-spacing: -2.05px;
+  }
+
+  .tablet\:text-2xl {
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -1.5px;
   }
 }
 
@@ -892,6 +1015,38 @@ video {
     right: 380px;
   }
 
+  .desktop\:bottom-\[55px\] {
+    bottom: 55px;
+  }
+
+  .desktop\:right-\[-239px\] {
+    right: -239px;
+  }
+
+  .desktop\:bottom-\[-55px\] {
+    bottom: -55px;
+  }
+
+  .desktop\:right-\[-404px\] {
+    right: -404px;
+  }
+
+  .desktop\:bottom-\[-54px\] {
+    bottom: -54px;
+  }
+
+  .desktop\:bottom-\[-53px\] {
+    bottom: -53px;
+  }
+
+  .desktop\:bottom-\[-56px\] {
+    bottom: -56px;
+  }
+
+  .desktop\:bottom-\[-58px\] {
+    bottom: -58px;
+  }
+
   .desktop\:mr-8 {
     margin-right: 2rem;
   }
@@ -912,6 +1067,10 @@ video {
     margin-right: 0px;
   }
 
+  .desktop\:mt-\[104px\] {
+    margin-top: 104px;
+  }
+
   .desktop\:block {
     display: block;
   }
@@ -922,6 +1081,27 @@ video {
 
   .desktop\:max-w-\[445px\] {
     max-width: 445px;
+  }
+
+  .desktop\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .desktop\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .desktop\:gap-y-\[58px\] {
+    row-gap: 58px;
+  }
+
+  .desktop\:py-\[72px\] {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
+  .desktop\:pt-\[72px\] {
+    padding-top: 72px;
   }
 
   .desktop\:text-4xl {
