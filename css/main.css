@@ -1286,6 +1286,10 @@ video {
     display: block;
   }
 
+  .desktop\:flex {
+    display: flex;
+  }
+
   .desktop\:hidden {
     display: none;
   }
@@ -1347,6 +1351,10 @@ video {
     font-size: 88px;
     line-height: 88px;
     letter-spacing: -2.5px;
+  }
+
+  .group:hover .desktop\:group-hover\:block {
+    display: block;
   }
 
   .group:hover .desktop\:group-hover\:opacity-100 {
