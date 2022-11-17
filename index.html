@@ -13,10 +13,12 @@
 
     <link rel="stylesheet" href="/css/main.css" />
 
+    <script src="/js/main.js" defer></script>
+
     <title>Frontend Mentor | Single-page developer portfolio</title>
   </head>
   <body
-    class="relative overflow-x-hidden bg-black pb-32 font-primary text-base text-grey tablet:text-md"
+    class="relative overflow-x-hidden bg-black font-primary text-base text-grey tablet:text-md"
   >
     <!----------------- HEADER ----------------->
     <header class="absolute inset-x-0 top-7 z-50 tablet:top-8 desktop:top-10">
@@ -524,20 +526,143 @@
           </div>
         </div>
       </section>
-
-      <!--  HTML
-    Contact
-
-    I would love to hear about your project and how I could help. Please 
-    fill in the form, and I’ll get back to you as soon as possible.
-
-    Name
-    Email
-    Message
-
-    Send message
-
-    adamkeyes -->
     </main>
+
+    <footer class="mt-20 bg-dark-grey tablet:mt-[100px] desktop:mt-[139px]">
+      <div
+        class="container relative px-4 py-[60px] tablet:px-8 tablet:pb-10 desktop:pt-[84px] desktop:pb-[92px]"
+      >
+        <!-- Top -->
+        <div
+          class="flex flex-col gap-[50px] tablet:items-center desktop:flex-row desktop:items-start desktop:justify-between"
+        >
+          <!-- Left Content -->
+          <div class="desktop:text-start text-center tablet:max-w-[445px]">
+            <h2 class="text-xl text-white tablet:text-3xl desktop:text-4xl">
+              Contact
+            </h2>
+            <p class="mt-[20px] desktop:mt-[36px]">
+              I would love to hear about your project and how I could help.
+              Please fill in the form, and I’ll get back to you as soon as
+              possible.
+            </p>
+          </div>
+          <!-- Form -->
+          <form
+            id="contact-form"
+            class="w-full space-y-8 tablet:max-w-[445px]"
+            novalidate
+          >
+            <div class="relative">
+              <input
+                id="contact-form-name"
+                class="outline-non [&.error]:border-red [&.success]:border-green peer w-full border-b border-grey bg-transparent pb-[18px] uppercase text-white"
+                placeholder="Name"
+                required
+              />
+              <p
+                class="peer-[&.error]:block absolute right-0 top-full hidden text-[12px] text-red"
+              >
+                Sorry, invalid format here
+              </p>
+              <div class="peer-[&.error]:block absolute right-0 top-0 hidden">
+                <img
+                  src="assets/images/icon-error.svg"
+                  width="24"
+                  height="24"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="relative">
+              <input
+                id="contact-form-email"
+                class="[&.error]:border-red [&.success]:border-green peer w-full border-b border-grey bg-transparent pb-[18px] uppercase text-white outline-none"
+                type="email"
+                placeholder="Email"
+                required
+              />
+              <p
+                class="peer-[&.error]:block absolute right-0 top-full hidden text-[12px] text-red"
+              >
+                Sorry, invalid format here
+              </p>
+              <div class="peer-[&.error]:block absolute right-0 top-0 hidden">
+                <img
+                  src="assets/images/icon-error.svg"
+                  width="24"
+                  height="24"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="relative">
+              <textarea
+                id="contact-form-message"
+                class="[&.error]:border-red [&.success]:border-green peer min-h-[100px] w-full border-b border-grey bg-transparent pb-[18px] uppercase text-white outline-none"
+                placeholder="Message"
+                required
+              ></textarea>
+              <p
+                class="peer-[&.error]:block absolute right-0 top-full hidden text-[12px] text-red"
+              >
+                Sorry, invalid format here
+              </p>
+              <div class="peer-[&.error]:block absolute right-0 top-0 hidden">
+                <img
+                  src="assets/images/icon-error.svg"
+                  width="24"
+                  height="24"
+                  alt=""
+                />
+              </div>
+            </div>
+            <button
+              class="ml-auto block w-fit cursor-pointer border-b-2 border-green pb-3 text-base font-bold uppercase tracking-[2.3px] text-white transition-colors hover:text-green"
+              type="submit"
+            >
+              Send message
+            </button>
+          </form>
+        </div>
+        <!-- Bottom -->
+        <div
+          class="mt-[87px] flex flex-col items-center gap-6 border-t-2 border-grey pt-10 tablet:flex-row tablet:justify-between"
+        >
+          <!-- Logo -->
+          <p
+            class="text-lg font-bold leading-none text-white tablet:text-[32px]"
+          >
+            adamkeyes
+          </p>
+          <!-- Socials -->
+          <div class="flex items-center gap-6 tablet:gap-8">
+            <a href="#" class="w-5 tablet:w-6">
+              <img src="./assets/images/icon-github.svg" alt="" />
+            </a>
+            <a href="#" class="w-5 tablet:w-6">
+              <img src="./assets/images/icon-frontend-mentor.svg" alt="" />
+            </a>
+            <a href="#" class="w-5 tablet:w-6">
+              <img src="./assets/images/icon-linkedin.svg" alt="" />
+            </a>
+            <a href="#" class="w-5 tablet:w-6">
+              <img src="./assets/images/icon-twitter.svg" alt="" />
+            </a>
+          </div>
+        </div>
+        <!-- Rings Background Pattern -->
+        <div
+          class="absolute bottom-[269px] left-[-343px] tablet:bottom-[130px] tablet:left-[-368px] desktop:bottom-[219px] desktop:left-[-370px]"
+        >
+          <img
+            src="./assets/images/pattern-rings.svg"
+            width="530"
+            height="129"
+            alt=""
+          />
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

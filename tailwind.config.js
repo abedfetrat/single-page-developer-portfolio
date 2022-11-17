@@ -7,6 +7,7 @@ module.exports = {
       desktop: "1174px"
     },
     colors: {
+      transparent: 'hsla(0, 0%, 0%, 0)',
       black: '#151515',
       white: '#FFFFFF',
       green: '#4EE1A0',
