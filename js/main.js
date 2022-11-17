@@ -4,23 +4,27 @@ const nameField = document.getElementById('contact-form-name');
 const emailField = document.getElementById('contact-form-email');
 const messageField = document.getElementById('contact-form-message');
 
-nameField.addEventListener('input', validateField);
-emailField.addEventListener('input', validateField);
-messageField.addEventListener('input', validateField);
+nameField.addEventListener('input', e => validateField(e.target));
+emailField.addEventListener('input', e => validateField(e.target));
+messageField.addEventListener('input', e => validateField(e.target));
 
-function validateField({ target }) {
-    if (target.validity.valid) {
-        target.classList.remove('error');
-        target.classList.add('success');
+function validateField(field) {
+    if (field.validity.valid) {
+        field.classList.remove('error');
+        field.classList.add('success');
+        return true;
     } else {
-        target.classList.remove('success');
-        target.classList.add('error');
+        field.classList.remove('success');
+        field.classList.add('error');
+        return false;
     }
 }
 
 function validateForm() {
-    return nameField.validity.valid && emailField.validity.valid &&
-        messageField.validity.valid;
+    const validName = validateField(nameField);
+    const validEmail = validateField(emailField);
+    const validMessage = validateField(messageField);
+    return validName && validEmail && validMessage;
 }
 
 function resetForm() {
