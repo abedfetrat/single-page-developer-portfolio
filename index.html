@@ -80,7 +80,7 @@
         </div>
         <!-- Profile Image -->
         <div
-          class="-order-1 mx-auto max-w-[174px] tablet:col-start-1 tablet:row-start-1 tablet:ml-auto tablet:-mr-[32px] tablet:max-w-[322px] desktop:mr-0 desktop:max-w-[445px]"
+          class="-order-1 mx-auto tablet:col-start-1 tablet:row-start-1 tablet:ml-auto tablet:-mr-[32px] desktop:mr-0"
         >
           <picture>
             <source
@@ -91,7 +91,11 @@
               srcset="./assets/images/image-profile-tablet.webp"
               media="(min-width: 768px)"
             />
-            <img src="./assets/images/image-profile-mobile.webp" alt="" />
+            <img
+              class="h-[383px] w-[174px] tablet:h-[600px] tablet:w-[322px] desktop:h-[720px] desktop:w-[445px]"
+              src="./assets/images/image-profile-mobile.webp"
+              alt=""
+            />
           </picture>
         </div>
         <!-- Rings Background Pattern -->
@@ -214,7 +218,7 @@
                   media="(min-width: 768px)"
                 />
                 <img
-                  class="w-full object-cover"
+                  class="w-full h-auto aspect-[27/20] object-cover"
                   src="./assets/images/thumbnail-project-1-small.webp"
                   alt=""
                 />
